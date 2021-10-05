@@ -1,4 +1,3 @@
-
 <?php
 
 $connection = mysqli_connect("localhost", "root", "", "matab_project");
