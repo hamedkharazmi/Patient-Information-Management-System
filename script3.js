@@ -1,5 +1,3 @@
-
-
 $("#Bimar").click(function() {                
   $.ajax({
     type: "GET",
