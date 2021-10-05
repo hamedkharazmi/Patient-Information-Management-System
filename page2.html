@@ -1,0 +1,359 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style2.css" />
+  </head>
+
+  <body dir="rtl">
+    <h1 class="h1-search">اطلاعات بیمار</h1>
+    <div class="con-search" dir="ltr">
+      <div class="wrap">
+        <div class="search">
+          <form class="form-con" action="BE.php?id=searchBimar" method="post">
+            <input
+              dir="rtl"
+              type="text"
+              class="searchTerm"
+              placeholder=" شناسه بیمار"
+              name="BimarID"
+            />
+            <button type="submit" class="searchButton">جستجو</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <form action="BE.php?id=form2" method="post" class="contact">
+        <h3>پذیرش بیمار</h3>
+        <h4>اطالاعات بیمار</h4>
+        <input
+          placeholder="شناسه"
+          name="PazireshID"
+          type="text"
+          tabindex="1"
+          required
+          autofocus
+        />
+        <input
+          placeholder="زمان پذیرش "
+          name="pazireshDate"
+          type="text"
+          tabindex="2"
+          required
+        />
+        <input
+          placeholder="نوع بیماری "
+          name="bimaritype"
+          type="text"
+          tabindex="3"
+          required
+        />
+        <input
+          placeholder="شناسه بیمار "
+          name="bimarID"
+          type="text"
+          tabindex="4"
+          required
+        />
+        <input
+          placeholder="شناسه بیمه "
+          name="BimehtypeID"
+          type="text"
+          tabindex="5"
+          required
+        />
+        <input
+          placeholder="حق الزحمه "
+          name="HaghAlzahmeh"
+          type="text"
+          tabindex="6"
+          required
+        />
+        <textarea placeholder="توضیحات" name="Notes" tabindex="7"></textarea>
+        <button name="submit" type="submit">تایید</button>
+      </form>
+    </div>
+
+    <div class="container">
+      <form action="BE.php?id=form1" method="post" class="contact">
+        <h3>افزودن بیمار</h3>
+        <h4>اطالاعات بیمار</h4>
+        <input
+          placeholder="شناسه"
+          name="BimarID"
+          type="text"
+          tabindex="1"
+          required
+          autofocus
+        />
+        <input
+          placeholder="نام"
+          name="BimarName"
+          type="text"
+          tabindex="2"
+          required
+          autofocus
+        />
+        <input
+          placeholder="تاریخ ثبت"
+          name="DateSabt"
+          type="text"
+          tabindex="3"
+          required
+        />
+        <input
+          placeholder="کد بیمه"
+          name="CodeBimeh"
+          type="text"
+          tabindex="4"
+          required
+        />
+        <input
+          placeholder="تلفن "
+          name="TelePhone"
+          type="text"
+          tabindex="5"
+          required
+        />
+        <input
+          placeholder="موبایل "
+          name="Mobile"
+          type="text"
+          tabindex="6"
+          required
+        />
+        <input
+          placeholder="کد ملی "
+          name="MelliCode"
+          type="text"
+          tabindex="7"
+          required
+        />
+        <input
+          placeholder="آدرس "
+          name="Address"
+          type="text"
+          tabindex="8"
+          required
+        />
+        <textarea placeholder="توضیحات" name="Notes" tabindex="9"></textarea>
+        <button name="submit" type="submit" id="contact-submit1">تایید</button>
+      </form>
+    </div>
+    <div class="container-del">
+      <form action="BE.php?id=del1" method="post" class="contact">
+        <h3>حذف بیمار</h3>
+        <input
+          placeholder="شناسه"
+          name="BimarID"
+          type="text"
+          tabindex="1"
+          required
+          autofocus
+        />
+        <button name="submit" type="submit" id="contact-submit2">تایید</button>
+      </form>
+    </div>
+
+    <div class="container">
+      <form class="contact" action="BE.php?id=form3" method="post">
+        <h3>اطالاعات بیمه</h3>
+        <input
+          placeholder="کد بیمه"
+          name="CodeBimeh"
+          type="text"
+          tabindex="1"
+          required
+          autofocus
+        />
+        <input
+          placeholder="نوع بیمه"
+          name="BimehType"
+          type="text"
+          tabindex="2"
+          required
+          autofocus
+        />
+        <input
+          placeholder="درصد بیمه "
+          name="DarsadeBimeh"
+          type="text"
+          tabindex="3"
+          required
+        />
+        <input
+          placeholder="درصد بیمار "
+          name="NDarSadeBimar"
+          type="text"
+          tabindex="4"
+          required
+        />
+        <button
+          name="submit"
+          type="submit"
+          id="contact-submit3"
+          data-submit="...Sending"
+        >
+          تایید
+        </button>
+      </form>
+    </div>
+
+    <div class="container">
+      <form class="contact" action="BE.php?id=form4" method="post">
+        <h3>آزمایشات</h3>
+        <input
+          placeholder="شناسه آزمایش "
+          name="AzmayeshID"
+          type="text"
+          tabindex="1"
+          required
+          autofocus
+        />
+        <input
+          placeholder="تاریخ آزمایش "
+          name="DateRow"
+          type="text"
+          tabindex="2"
+          required
+          autofocus
+        />
+        <input
+          placeholder="شناسه بیمار  "
+          name="BimarID"
+          type="text"
+          tabindex="3"
+          required
+        />
+        <input
+          placeholder="نتیجه آزمایش  "
+          name="NatijehAzmaiesh"
+          type="text"
+          tabindex="4"
+          required
+        />
+        <textarea placeholder="توضیحات" name="Notes" tabindex="5"></textarea>
+        <button name="submit" type="submit" id="contact-submit4">تایید</button>
+      </form>
+    </div>
+    <div class="container-del">
+      <form action="BE.php?id=del2" method="post" class="contact">
+        <h3>حذف آزمایش</h3>
+        <input
+          placeholder="شناسه آزمایش"
+          name="AzmayeshID"
+          type="text"
+          tabindex="1"
+          required
+          autofocus
+        />
+        <button name="submit" type="submit" id="contact-submit5">تایید</button>
+      </form>
+    </div>
+
+    <div id="app">
+      <ul>
+        <li id="Bimar" style="font-family: 'Tanha';">لیست اطلاعات بیماران</li>
+        <li id="paziresh" style="font-family: 'Tanha';">لیست پذیرش بیماران</li>
+        <li id="bimeh" style="font-family: 'Tanha';">لیست اطلاعات بیمه</li>
+      </ul>
+    </div>
+
+    <div id="table1" style="display: none;">
+      <h1 class="h1-table">لیست اطلاعات بیماران</h1>
+      <table dir="rtl" class="rwd-table">
+        <thead>
+          <tr>
+            <th style="text-align: center;">شناسه</th>
+            <th style="text-align: center;">نام و نام خانوادگی</th>
+            <th style="text-align: center;">تاریخ ثبت</th>
+            <th style="text-align: center;">کد بیمه</th>
+            <th style="text-align: center;">تلفن</th>
+            <th style="text-align: center;">موبایل</th>
+            <th style="text-align: center;">کد ملی</th>
+            <th style="text-align: center;">آدرس</th>
+            <th style="text-align: center;">توضیحات</th>
+          </tr>
+        </thead>
+        <tbody id="tr-add"></tbody>
+      </table>
+      <div
+        class="printButton"
+        onclick="fprint()"
+        style="
+          cursor: pointer;
+          font-size: 20px;
+          text-align: right;
+          padding-right: 155px;
+        "
+      >
+        پرینت
+      </div>
+    </div>
+
+    <div id="table2" style="display: none;">
+      <h1 class="h1-table">لیست پذیرش بیماران</h1>
+      <table dir="rtl" class="rwd-table">
+        <thead>
+          <tr>
+            <th style="text-align: center;">شناسه پذیرش</th>
+            <th style="text-align: center;">تاریخ پذیرش</th>
+            <th style="text-align: center;">نوع بیماری</th>
+            <th style="text-align: center;">شناسه بیمار</th>
+            <th style="text-align: center;">نوع بیمه</th>
+            <th style="text-align: center;">حق الزحمه</th>
+            <th style="text-align: center;">توضیحات</th>
+          </tr>
+        </thead>
+        <tbody id="tr-add2"></tbody>
+      </table>
+      <div
+        class="printButton"
+        onclick="fprint2()"
+        style="
+          cursor: pointer;
+          font-size: 20px;
+          text-align: right;
+          padding-right: 355px;
+        "
+      >
+        پرینت
+      </div>
+    </div>
+
+    <div id="table3" style="display: none;">
+      <h1 class="h1-table">لیست اطالاعات بیمه</h1>
+      <table dir="rtl" class="rwd-table">
+        <thead>
+          <tr>
+            <th style="text-align: center;">کد بیمه</th>
+            <th style="text-align: center;">نوع بیمه</th>
+            <th style="text-align: center;">درصد بیمه</th>
+            <th style="text-align: center;">درصد بیمار</th>
+          </tr>
+        </thead>
+        <tbody id="tr-add3"></tbody>
+      </table>
+      <div
+        class="printButton"
+        onclick="fprint3()"
+        style="
+          cursor: pointer;
+          font-size: 20px;
+          text-align: right;
+          padding-right: 555px;
+        "
+      >
+        پرینت
+      </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <!-- User scripts -->
+    <script type="text/javascript" src="script2.js"></script>
+  </body>
+</html>
